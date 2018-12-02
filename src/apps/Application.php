@@ -10,8 +10,8 @@ use Symfony\Component\Console\Application as SymApp;
 
 class Application extends SymApp
 {
-  public $app = 'SkyWest ExpressJet Silverstripe Upgrader Tool';
-  public $ver = ' - v1.0.0';
+  public $app = 'Independent SilverStripe Upgrader Tool';
+  public $ver = ' - v1.0.3';
   public function __construct()
   {
     parent::__construct($this->app, $this->ver);
