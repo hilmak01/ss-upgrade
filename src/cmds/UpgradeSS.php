@@ -10,7 +10,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 class UpgradeSS extends Command {
 
     const DS = DIRECTORY_SEPARATOR;
-    private $namespace = 'SkyWest';
+    private $namespace = 'App';
 
     public function configure()
     {
