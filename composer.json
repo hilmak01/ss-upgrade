@@ -1,6 +1,6 @@
 {
     "name": "hilmak01/ss-upgrader",
-    "description": "Module for company-wide catastrophic events!",
+    "description": "Independent module for upgrading SilverStripe to 4.*",
     "type": "library",
     "license": "MIT",
     "authors": [{
