@@ -58,9 +58,11 @@ class ModifyCode extends Command {
             [
                'adding $context = [] to "can*" functions', 'can$1($member=NULL, $context = [])'
             ],
-           '/\barray\s*\((\s*(.*?)\s*)\)/msi' => [
+            'Varchar\((.+?)\)' => [ "Varchar|$1|" ],
+            '/array\s*\([^\(]*(\(.*\))[^\)]*\)/msi' => [
                "ShortHand for arrays", '[$1]'
-            ]
+           ],
+            'Varchar\|(.+?)\|' => [ "Varchar($1)" ],
         ];
 
         foreach ($search_n_replace as $pattern => $replacer) {
